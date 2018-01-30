@@ -1,0 +1,27 @@
+<!-- 
+	@author Nikodem Walicki
+
+	The application performs a test to check whether the input data meets the criteria of valid palindrome
+	User is able to type any text in simple form and to press "Submit" button to process test 
+	
+-->
+
+<html>
+	<head><title>Assessment 01</title></head>
+	<body>
+		<!-- Header -->
+		<h1 align="center">Palindrome test</h1>
+		<!-- User input form -->
+		<!-- User input will be send to MainApp class --> 
+		<form align="center" action='classes/MainApp.class.php' method='GET'>
+			<!-- Input field -->
+			<div align="center">
+			Check if the text is a palindrome: </br> </br><input type='text' name='inputWord' +  />
+			<div>
+			</br>
+			</br>
+			<!-- Submit button -->
+			<input type='submit' value='Submit'/>
+		</form>
+	</body>
+</html>
