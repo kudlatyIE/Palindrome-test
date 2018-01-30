@@ -26,7 +26,7 @@ class Output{
 	function getOutput($originalString){
 		return "<html>
     				<body>
-    					<h1 align=\"center\">Palindrome</h1>
+    					<h1 align=\"center\">Palindrome test</h1>
     					<h3 align=\"center\">" . $originalString . "</h3>
 						<div align=\"center\" style= color:" .$this->color. ">" .$this->messageResult."</div>
     					</br>
