@@ -38,7 +38,7 @@ class StringUtils{
 	static function validateInput($input){
 		if(empty($input)) throw new NullInputException("empty  input");
 		if(strlen($input)==1) throw new InvalidInputException("single  char  input");
-		if(!ctype_alpha($input)) throw new NonAlphabeticInputException("non  alphabetic  character(s)  input");
+		if(!ctype_alpha(preg_replace('/\s+/', '', $input))) throw new NonAlphabeticInputException("non  alphabetic  character(s)  input");
 	}
 }
 
