@@ -24,7 +24,8 @@ class Output{
 
 	// Generate output as HTML formated text and back HOME button.
 	function getOutput($originalString){
-		return "<html>
+		return "<!DOCTYPE HTML>
+				<html>
     				<body>
     					<h1 align=\"center\">Palindrome test</h1>
     					<h3 align=\"center\">" . $originalString . "</h3>
